@@ -8,7 +8,6 @@ import hashlib
 conn = sqlite3.connect('school.db')
 c = conn.cursor()
 
-# Create tables with the updated schema
 c.execute('''CREATE TABLE IF NOT EXISTS users (
                 username TEXT PRIMARY KEY,
                 password TEXT)''')
